@@ -1,2 +1,2 @@
-int parser_EmployeeFromText(FILE* pArchivo , LinkedList* pArrayListEmployee);
-int parser_EmployeeFromBinary(FILE* pArchivo , LinkedList* pArrayListEmployee);
+int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);

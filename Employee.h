@@ -5,25 +5,25 @@ typedef struct
     int id;
     char nombre[128];
     int horasTrabajadas;
-    int sueldo;
+    float sueldo;
 }Employee;
 
 Employee* employee_new();
-
+Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr);
 void employee_delete();
 
 void employee_setId(Employee* this,int id);
-int employee_getId(Employee* this);
+int employee_getId(Employee* this,int* id);
 
 void employee_setNombre(Employee* this,char* nombre);
-char* employee_getNombre(Employee* this);
+char* employee_getNombre(Employee* this,char* nombre);
 
 void employee_setHorasTrabajadas(Employee* this,int horasTrabajadas);
-int employee_getHorasTrabajadas(Employee* this);
+int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas);
 
 void employee_setSueldo(Employee* this,int sueldo);
-int employee_getSueldo(Employee* this);
+float employee_getSueldo(Employee* this,float sueldo);
 
-Employee* employee_nuevosParametros(char *var1, char *var2, char *var3, char *var4);
+int ordenarSueldo(Employee* empleadoUno,Employee* empleadoDos);
 
 #endif // employee_H_INCLUDED

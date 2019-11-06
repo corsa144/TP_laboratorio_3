@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Employee.h"
-#include "input.h"
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
  *
@@ -11,8 +10,8 @@
  * \return int
  *
  */
-
-int parser_EmployeeFromText(FILE* pArchivo , LinkedList* pArrayListEmployee){
+int parser_EmployeeFromText(FILE* pArchivo , LinkedList* pArrayListEmployee)
+{
     int r,i=0;
     if (pArchivo == NULL){
         printf ("Error al leer el archivo txt");
@@ -27,12 +26,14 @@ int parser_EmployeeFromText(FILE* pArchivo , LinkedList* pArrayListEmployee){
                 i++;
                 ll_add(pArrayListEmployee,p);
             }
-            else
+            else{
                 break;
+            }
         }while( !feof(pArchivo));
     }
     return i;
 }
+
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
  *
@@ -57,8 +58,9 @@ int parser_EmployeeFromBinary(FILE* pArchivo , LinkedList* pArrayListEmployee)
                 i++;
                 ll_add(pArrayListEmployee,pBinario);
             }
-            else
+            else{
                 break;
+            }
         }while( !feof(pArchivo));
     }
     return i;

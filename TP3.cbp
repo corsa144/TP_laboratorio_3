@@ -44,10 +44,6 @@
 		</Unit>
 		<Unit filename="Employee.h" />
 		<Unit filename="LinkedList.h" />
-		<Unit filename="input.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="input.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -55,6 +51,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="parser.h" />
+		<Unit filename="utn_validar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utn_validar.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

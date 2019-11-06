@@ -53,50 +53,49 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1560553325 source:c:\users\sidea\desktop\tp3\win_32\controller.c
+1573007861 source:c:\users\sidea\desktop\tp3\win_64\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
+	"utn_validar.h"
 	"parser.h"
-	"input.h"
-	"controller.h"
 
-1533133022 c:\users\sidea\desktop\tp3\win_32\linkedlist.h
+1533133022 c:\users\sidea\desktop\tp3\win_64\linkedlist.h
 
-1560553175 c:\users\sidea\desktop\tp3\win_32\employee.h
+1573007323 c:\users\sidea\desktop\tp3\win_64\employee.h
 
-1560552009 c:\users\sidea\desktop\tp3\win_32\parser.h
-
-1560124523 c:\users\sidea\desktop\tp3\win_32\input.h
-
-1560552873 c:\users\sidea\desktop\tp3\win_32\controller.h
-
-1560553253 source:c:\users\sidea\desktop\tp3\win_32\input.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"input.h"
-
-1560551843 source:c:\users\sidea\desktop\tp3\win_32\main.c
+1573004998 source:c:\users\sidea\desktop\tp3\win_64\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Controller.h"
 	"Employee.h"
+	"utn_validar.h"
 
-1560552936 source:c:\users\sidea\desktop\tp3\win_32\parser.c
+1533133022 c:\users\sidea\desktop\tp3\win_64\controller.h
+
+1572844275 source:c:\users\sidea\desktop\tp3\win_64\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
-	"input.h"
 
-1560553142 source:c:\users\sidea\desktop\tp3\win_32\employee.c
+1572842840 source:c:\users\sidea\desktop\tp3\win_64\utn_validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_validar.h"
+
+1572842734 c:\users\sidea\desktop\tp3\win_64\utn_validar.h
+
+1573007275 source:c:\users\sidea\desktop\tp3\win_64\employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"LinkedList.h"
 	"Controller.h"
 	"Employee.h"
+
+1533133022 c:\users\sidea\desktop\tp3\win_64\parser.h
 

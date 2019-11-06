@@ -16,7 +16,7 @@ Employee* employee_nuevosParametros(char *var1, char *var2, char *var3, char *va
     Employee* p = employee_new();
     idAux = atoi(var1);
     horasAux = atoi(var3);
-    sueldoAux = atoi(var4);
+    sueldoAux = atof(var4);
     employee_setId(p, idAux);
     employee_setNombre(p, var2);
     employee_setSueldo(p, sueldoAux);
@@ -56,24 +56,47 @@ void employee_setHorasTrabajadas(Employee* this, int horasTrabajadas)
 
 /*********FUNCIONES GET**********/
 
-int employee_getId(Employee* this)
+int employee_getId(Employee* this, int* id)
 {
-    return this->id;
+    if (this != NULL){
+        return this->id;
+    }
 }
 
-char * employee_getNombre(Employee* this)
+char * employee_getNombre(Employee* this, char* nombre)
 {
-    return this->nombre;
+    if(this != NULL){
+        return this->nombre;
+    }
 }
 
-int employee_getSueldo(Employee* this)
+float employee_getSueldo(Employee* this, float sueldo)
 {
-    return this->sueldo;
+    if(this != NULL){
+        return this->sueldo;
+    }
 }
 
-int employee_getHorasTrabajadas(Employee* this)
+int employee_getHorasTrabajadas(Employee* this, int* horasTrabajadas)
 {
-    return this->horasTrabajadas;
+    if(this != NULL){
+        return this->horasTrabajadas;
+    }
 }
 
+int ordenarSueldo(Employee* empleadoUno,Employee* empleadoDos)
+{
+    if(empleadoUno->sueldo > empleadoDos->sueldo)
+    {
+       return 1;
+    }
+    else if( empleadoUno->sueldo < empleadoDos->sueldo)
+    {
+        return -1;
+    }
+    else
+    {
+        return 0;
+    }
 
+}
